@@ -1,0 +1,32 @@
+<div class="w-100 pa3">
+
+	<small>หัวข้อ</small>
+	<div class="list-group pa0">
+	  <!-- <a routerLink="concert" class="list-group-item active">
+	  	<i class="fa fa-music"></i>Concert - LiveShow
+	  </a>
+    <a routerLink="travel" class="list-group-item">
+    	<i class="fa fa-plane"></i>Travel Ticket
+    </a>
+    <a routerLink="voucher" class="list-group-item">
+    	<i class="fa fa-ticket"></i>Voucher - Coupon
+    </a> -->
+    <a 
+    	*ngFor="let button of buttons" 
+    	(click)="activeBtn($event, button)"
+    	routerLink="{{button.link}}" 
+    	class="list-group-item" 
+    	[ngClass]="{ 'active': currentButton == button.link }"
+    	[innerHtml]="button.title">
+    </a>
+	</div>
+
+	<hr>
+
+	<small>เกี่ยวกับ</small>
+	<div class="list-group pa0">
+	  <a href="#" class="list-group-item">นโยบายความเป็นส่วนตัว</a>
+    <a href="#" class="list-group-item">นโยบายการใช้งาน</a>
+	</div>
+
+</div>

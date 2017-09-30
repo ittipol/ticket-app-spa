@@ -1,0 +1,19 @@
+<h4>{{item.title}}</h4>
+<div class="list-additional-content">
+	<small><i class="fa fa-music"></i></small>
+	<small *ngIf="item.date">Event Date {{item.date}}</small>
+	<small *ngIf="item.price">Price: {{item.price}}</small>
+	<small *ngIf="item.save">Save: {{item.save}}</small>
+	<small *ngIf="item.validTill">Valid Till: {{item.validTill}}</small>
+</div>
+<div *ngIf="item.images" class="list-image-group">
+	<img *ngFor="let image of item.images" class="list-image border border-primary" src="{{image}}">
+</div>
+
+<div class="clearfix">
+	<div class="btn-group pa0 float-right" role="group">
+		<button type="button" class="btn btn-raised btn-primary" (click)="displayContent($event,item)">
+			ดูเพิ่มเติม
+		</button>
+	</div>
+</div>

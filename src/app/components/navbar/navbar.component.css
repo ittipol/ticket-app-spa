@@ -1,0 +1,64 @@
+.nav-fixed:host {
+	position: relative;
+	height: 50px;
+	z-index: 1000;
+	display: block;
+}
+
+.navbar {
+	height: 50px;
+	padding: 10px 16px;
+	z-index: 1080;
+	background: #f857a6;
+	background: -webkit-linear-gradient(to right, #ff5858, #f857a6);
+	background: linear-gradient(to right, #ff5858, #f857a6);
+	box-shadow: none;
+}
+
+.navbar-brand > img {
+	width: 140px;
+}
+
+.navbar a.navbar-brand,
+.navbar i {
+	color: #fff;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+.navbar-nav a.nav-link {
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #fff;
+}
+
+.navbar-nav a.nav-link:hover {
+	color: #fff;
+}
+
+@media only screen and (max-width : 768px) {
+
+	.nav-fixed:host {
+		height: 60px;
+	}
+
+  .navbar {
+  	height: auto;
+  }
+
+  .navbar-brand {
+  	margin-right: auto;
+  	margin-left: auto;
+  }
+
+  .navbar-light .navbar-toggler {
+  	position: absolute;
+    right: 12px;
+    top: 12px;
+    border: 0;
+  }
+}

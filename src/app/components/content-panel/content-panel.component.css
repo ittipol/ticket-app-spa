@@ -1,0 +1,47 @@
+.content-panel:host {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 500;
+	width: 57%;
+	height: 100%;
+	background-color: #aaa;
+	transition: right .200s ease 0s;
+}
+
+.content-panel.show:host {
+	right: 0;
+}
+
+.panel-default {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -150px;
+	text-align: center;
+}
+
+.panel-default > i {
+	font-size: 140px;
+}
+
+.panel-default > h5 {
+	margin-top: 0.625em;
+}
+
+@media only screen and (max-width : 1440px) {
+  .content-panel:host {
+  	width: 800px !important;
+  	right: -100%;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .content-panel:host {
+  	width: 100% !important;
+  	/*right: -100%;*/
+  }
+}

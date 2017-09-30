@@ -1,0 +1,20 @@
+.list-block:host {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 2rem;
+	display: block;
+}
+
+.list-image-group img.list-image {
+	height: 90px;
+	margin-top: 0.625em;
+}
+
+.list-additional-content small {
+	margin-right: 15px;
+}
+
+.list-image-group .list-image:not(:last-child) {
+	margin-right: 8px;
+}

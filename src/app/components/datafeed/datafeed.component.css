@@ -1,0 +1,14 @@
+.data-feed:host {
+	/*width: 700px;*/
+	width: 43%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: block;
+}
+
+@media only screen and (max-width : 1440px) {
+  .data-feed:host {
+  	width: 100%;
+  }
+}
